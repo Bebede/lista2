@@ -1,0 +1,24 @@
+.containerFooter{
+    position: absolute;
+    /* top: calc(100% - (400px/100)*35); */
+    bottom: calc(100% - 100vh);
+    width: 100%;
+    height: clamp(10vh, 1vh, 30vh);
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+}
+.containerFooter p{
+    font-size: 14px;
+    padding-right: 2%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-right: 2px solid black;
+}
+#insta{
+    width: 68px;
+
+    height: 72px;
+}

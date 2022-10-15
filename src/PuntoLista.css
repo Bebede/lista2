@@ -1,0 +1,63 @@
+.containerPuntoLista{
+    width: calc(100%  - clamp(9%, 0.5% + 0.1vw, 13%));
+    height: 85%;
+    position: absolute;
+    display: grid;
+    grid-template-rows: 10% auto;
+    grid-template-areas: 'nonvisibile' 'visibile';
+}
+.visibile{
+    grid-area: visibile;
+    overflow: scroll;
+}
+.nonvisibile{
+    grid-area: nonvisibile;
+}
+.unpunto{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 20% auto;
+    grid-template-columns: 20% auto;
+    grid-template-areas: "linee titolo" "niente descrizione";
+}
+.linee{
+    grid-area: linee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.linea1{
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+}
+
+.linea2{
+    -moz-transform: rotate(320deg);
+    -webkit-transform: rotate(320deg);
+    -o-transform: rotate(320deg);
+    -ms-transform: rotate(320deg);
+    transform: rotate(320deg);
+}
+
+.linea{
+    width: 24px;
+    height: 3%;
+    margin: 5%;
+    background-color: black;
+    border: 3px solid black;
+}
+.niente{
+    grid-area: niente;
+}
+.titolopunto{
+    grid-area: titolo;
+}
+.descrizionepunto{
+    grid-area: descrizione;
+}

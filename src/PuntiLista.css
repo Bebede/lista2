@@ -1,0 +1,24 @@
+.containerHero{
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: 200;
+
+
+}
+#containerList{
+    min-height: 68%;
+    width: 100%;
+    
+
+    position: absolute;
+    bottom: 0;
+    left: clamp(9%, 0.5% + 0.1vw, 20%);
+}
+#containerList h1{
+    position: absolute;
+    right: 10px;
+    padding-right: 10%;
+    font-size: 37px;
+    font-weight: var(--lista2-fontweight);
+}

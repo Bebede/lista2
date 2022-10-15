@@ -1,0 +1,56 @@
+:root{
+    --lista2-fontsize: 46px;
+    --lista2-fontweight: 900;
+    --home-fontzize: 31px;
+    --home-fontweight: 700;
+}
+
+#background{
+    height: 100%;
+    background-color: #f9423a
+    ;
+    clip-path: polygon(0 0, 100% 0, 100% 21%, 0 74%);
+    overflow: visible;
+}
+.containerFixedElements{
+    height: 370px;
+    position: relative;
+    z-index: 100;
+    
+}
+ul{
+    list-style: none;
+}
+
+#lista2 ul {
+    position: absolute;
+    left: clamp(9%, 0.5% + 0.1vw, 13%);
+    bottom: 35%;
+     /* bottom in base al clip path */
+    font-size: var(--lista2-fontsize);
+    font-weight: var(--lista2-fontweight) ;
+    padding-left: 5px;
+    
+}
+/* calc calcola l'altezza come se fosse anche la linea all'interno del background; accorgimento preso a causa di clip path
+che non permette overflow */
+#lineanera{
+    position: absolute;
+    left: clamp(9%, 0.5% + 0.1vw, 13%);
+    top: calc((400px/100)*35);
+    width: 10px;
+    height: 65vh;
+
+    border-left: 3px solid black;
+}
+
+.containerNavbar ul{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    padding: 0 5px 0 0;
+    border-bottom: 2px solid black;
+    font-size: var(--home-fontzize);
+    font-weight: var(--home-fontweight);
+}
