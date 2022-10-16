@@ -57,7 +57,17 @@
 }
 .titolopunto{
     grid-area: titolo;
+    display: flex;
+   
+    align-items: center;
+    margin-bottom: 5px;
+    text-align: end;
 }
 .descrizionepunto{
     grid-area: descrizione;
+    overflow: scroll;
+    height: calc((33vh/2) + (400px/100)*35);
+    padding-left: 5px;
+    border-left: 2px solid gray;
 }
+
