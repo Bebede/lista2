@@ -29,6 +29,7 @@
     align-items: center;
 }
 .linea1{
+    transition: all 1s ease-in-out;
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     -o-transform: rotate(45deg);
@@ -38,6 +39,7 @@
 }
 
 .linea2{
+    transition: all 1s ease-in-out;
     -moz-transform: rotate(320deg);
     -webkit-transform: rotate(320deg);
     -o-transform: rotate(320deg);
@@ -45,28 +47,52 @@
     transform: rotate(320deg);
 }
 
+
+.animazione .linee .linea1, .animazione .linee .linea2{
+    transition: all 1s ease-in-out;
+    transform: rotate(0deg);
+}
+.animazione .titolopunto{
+    
+    opacity: 0;
+    padding-right: 100%;
+
+}
+.animazione .descrizionepunto{
+    
+    opacity: 0;
+    height: 0;
+    margin-top: 100%;
+    
+}
+
 .linea{
     width: 24px;
     height: 3%;
     margin: 5%;
-    background-color: black;
-    border: 3px solid black;
+    background-color: rgb(210, 211, 212);
+    border: 3px solid rgb(210, 211, 212);;
 }
 .niente{
     grid-area: niente;
 }
 .titolopunto{
+    transition: all 1s ease-in-out;
     grid-area: titolo;
     display: flex;
    
     align-items: center;
     margin-bottom: 5px;
+    padding-right: 0;
     text-align: end;
 }
 .descrizionepunto{
+    transition: all 1s ease-in-out;
+    margin: 0;
     grid-area: descrizione;
     overflow: scroll;
-    height: calc((33vh/2) + (400px/100)*35);
+    height: fit-content;
+    max-height: calc((37vh/2) + (400px/100)*35);
     padding-left: 5px;
     border-left: 2px solid gray;
 }

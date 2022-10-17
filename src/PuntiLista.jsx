@@ -8,7 +8,9 @@ function PuntiLista() {
     <main className="containerHero">
         <div id='containerList'>
             <h1>"noi per voi"</h1>
+            
             <PuntoLista/>
+            
         </div>
     </main>
 

@@ -4,7 +4,7 @@
     bottom: calc(100% - 100vh);
     width: 100%;
     height: clamp(10vh, 1vh, 30vh);
-    background-color: red;
+    background:linear-gradient(0deg, #2e3092, #d2d3d4); ;
     display: flex;
     justify-content: space-around;
     align-items: center;
