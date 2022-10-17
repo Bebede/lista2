@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className="containerFooter">
         <p>Made with love by Benedetto Giallombardo</p>
-        <AiOutlineInstagram id='insta'/>
+        <AiOutlineInstagram onClick={()=>{window.open("https://www.instagram.com/itive3_lista2/")}} id='insta'/>
     </div>
   )
 }
