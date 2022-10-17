@@ -8,7 +8,8 @@
 }
 .visibile{
     grid-area: visibile;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .nonvisibile{
     grid-area: nonvisibile;
