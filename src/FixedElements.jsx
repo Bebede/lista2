@@ -7,7 +7,7 @@ function FixedElements() {
         <div id='background'>
             <div className="containerNavbar">
                 <ul>
-                    <li>Home</li>
+                    <li></li>
                 </ul>
             </div>
             <div id='lista2'>
